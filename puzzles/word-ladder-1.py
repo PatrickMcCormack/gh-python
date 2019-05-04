@@ -12,7 +12,7 @@ end = "cog"
 def generateWords(word):
 	candidate_list=[]
 	for pos in range(len(word)):
-		# exclude any permuntation that includes a letter from the original word
+		# exclude any permutation that includes a letter from the original word
 		alphabet = "abcdefghijklmnopqrstuvwxyz".replace(word[pos],"")
 		for c in alphabet:
 			candidate = word[0:pos] + c + word[pos+1:]
